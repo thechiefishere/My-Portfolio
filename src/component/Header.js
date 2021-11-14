@@ -8,11 +8,14 @@ const Header = () => {
   const { openSidebar } = useGlobalContext();
   return (
     <header className="header">
-      <h1 className="header-title">
-        Toriola<span>John</span>
-      </h1>
+      <a href="/">
+        <h1 className="header-title">
+          Toriola<span>John</span>
+        </h1>
+      </a>
       <Navbar />
       <FaBars onClick={openSidebar} className="header-bars" />
+
       <Sidebar />
     </header>
   );
