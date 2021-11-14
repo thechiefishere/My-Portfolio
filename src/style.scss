@@ -1,3 +1,6 @@
+$primary-color: rgb(104, 199, 243);
+$primary-bg: rgb(235, 239, 241);
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -5,7 +8,7 @@
 }
 
 body {
-  background-color: #ebeff1;
+  background-color: $primary-bg;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
 }
@@ -14,7 +17,6 @@ a {
   text-decoration: none;
   color: #000;
 }
-
 ul {
   list-style: none;
 }
@@ -28,13 +30,15 @@ ul {
   align-items: center;
   padding: 20px;
   font-size: 1.1em;
-}
-.header-title span {
-  color: #68c7f3;
-}
-.header-bars {
-  font-size: 1.4em;
-  color: #68c7f3;
+  &-title {
+    span {
+      color: $primary-color;
+    }
+  }
+  &-bars {
+    font-size: 1.4em;
+    color: $primary-color;
+  }
 }
 
 .navbar {
@@ -50,23 +54,21 @@ ul {
   background-color: #fff;
   overflow: hidden;
   transition: 0.5s;
-}
-.sidebar-times {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  font-size: 1.4em;
-  color: #68c7f3;
-}
-.sidebar-list {
-  text-align: center;
-}
-.sidebar-list-item {
-  margin: 40px;
+  &-times {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 1.4em;
+    color: $primary-color;
+  }
+  &-list {
+    text-align: center;
+    &-item {
+      margin: 40px;
+    }
+  }
 }
 
 .show-sidebar {
   height: 40vh;
 }
-
-/*# sourceMappingURL=index.css.map */
