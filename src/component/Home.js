@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-    <section>
+    <section className="section home">
       <h3 className="home-text">
         Hello, I am <span>John</span> and I am a Full Stack Web Developer
       </h3>

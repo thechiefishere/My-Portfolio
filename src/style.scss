@@ -1,7 +1,7 @@
-$primary-color: rgb(73, 177, 238);
-$primary-bg: rgb(251, 252, 253);
-$secondary-color: rgb(40, 26, 245);
-$secondary-bg: rgb(220, 219, 240);
+$primary-color: rgb(75, 7, 121);
+$primary-bg: rgb(242, 238, 245);
+$secondary-color: rgb(73, 177, 238);
+$secondary-bg: rgb(235, 240, 243);
 
 * {
   box-sizing: border-box;
@@ -12,6 +12,7 @@ $secondary-bg: rgb(220, 219, 240);
 body {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
+  line-height: 1.5;
 }
 
 a {
@@ -26,23 +27,24 @@ ul {
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
-  // z-index: 10;
 }
 
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   margin-bottom: 8vh;
   padding: 20px;
   padding-top: 30px;
   font-size: 1.1em;
+
   &-img {
     width: 100%;
   }
   &-title {
+    color: $primary-color;
     span {
-      color: $primary-color;
+      color: $secondary-color;
     }
   }
   &-bars {
@@ -67,7 +69,7 @@ ul {
   &-times {
     font-size: 1.4em;
     color: $primary-color;
-    margin-top: 30px;
+    margin-top: 40px;
     right: 20px;
     position: absolute;
   }
@@ -77,7 +79,7 @@ ul {
     &-item {
       margin: 40px;
       a {
-        color: #000;
+        color: $secondary-color;
         font-size: 1.3em;
       }
       a:hover {
@@ -91,6 +93,20 @@ ul {
   height: 100vh;
 }
 
+.section {
+  width: 90%;
+  margin: 60px auto;
+  &-header {
+    text-align: center;
+  }
+  .line {
+    width: 60px;
+    height: 6px;
+    background-color: $primary-color;
+    margin: 3px auto;
+  }
+}
+
 .home {
   &-text {
     width: 50%;
@@ -98,8 +114,45 @@ ul {
     text-align: center;
     font-size: 1.8em;
     span {
-      color: $primary-color;
+      color: $secondary-color;
       font-size: 1.5em;
     }
   }
+}
+
+.about {
+  margin-top: 40px;
+  .info {
+    margin-top: 40px;
+    margin-bottom: 25px;
+    &-title {
+      color: $secondary-color;
+      font-size: 1.8em;
+      margin-bottom: 15px;
+    }
+  }
+
+  .aside {
+    background-color: $secondary-bg;
+    margin-bottom: 25px;
+
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #ccc;
+    &-img {
+      width: 100%;
+      height: 30vh;
+      border-radius: 0px 0px 5px 5px;
+    }
+    &-details {
+      padding: 10px;
+    }
+    &-title {
+      color: $secondary-color;
+      font-size: 1.4em;
+    }
+  }
+}
+
+.projects {
+  background-color: $primary-bg;
 }
