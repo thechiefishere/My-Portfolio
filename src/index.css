@@ -58,7 +58,7 @@ ul {
   position: absolute;
   top: 0vh;
   left: 0px;
-  background-color: #f2eef5;
+  background-color: #f6f2f8;
   overflow: hidden;
   transition: 0.5s ease-out;
 }
@@ -126,7 +126,7 @@ ul {
   margin-bottom: 15px;
 }
 .about .aside {
-  background-color: #ebf0f3;
+  background-color: #f5f8fa;
   margin-bottom: 25px;
   border-radius: 5px;
   box-shadow: 3px 3px 5px #ccc;
@@ -144,8 +144,43 @@ ul {
   font-size: 1.4em;
 }
 
-.projects {
-  background-color: #f2eef5;
+.projects .project {
+  margin: 30px auto;
+  background-color: #f6f2f8;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px #ccc;
+}
+.projects .project-img {
+  width: 100%;
+  height: 30vh;
+}
+.projects .project-details {
+  text-align: center;
+  padding: 5px;
+}
+.projects .project-details h3 {
+  font-size: 1.5em;
+  color: #4b0779;
+}
+.projects .project-tech {
+  margin: 8px;
+}
+.projects .project-tech p {
+  background-color: #49b1ee;
+  padding: 3px;
+  border-radius: 5px;
+  display: inline;
+  margin: 15px;
+}
+.projects .project-repo {
+  background-color: #008cff;
+  color: #fff;
+  padding: 8px;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+.projects .project-repo .logo {
+  font-size: 1.4em;
 }
 
 /*# sourceMappingURL=index.css.map */

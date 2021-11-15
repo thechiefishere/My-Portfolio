@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import projects from "./data";
 
 const AppContext = React.createContext();
 
@@ -14,7 +15,9 @@ export const AppProvider = ({ children }) => {
   };
 
   return (
-    <AppContext.Provider value={{ showSidebar, openSidebar, closeSidebar }}>
+    <AppContext.Provider
+      value={{ showSidebar, openSidebar, closeSidebar, projects }}
+    >
       {children}
     </AppContext.Provider>
   );

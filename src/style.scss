@@ -1,7 +1,8 @@
 $primary-color: rgb(75, 7, 121);
-$primary-bg: rgb(242, 238, 245);
+$primary-bg: hsl(280, 27%, 96%);
 $secondary-color: rgb(73, 177, 238);
-$secondary-bg: rgb(235, 240, 243);
+$secondary-bg: rgb(245, 248, 250);
+$project-bg: rgb(0, 140, 255);
 
 * {
   box-sizing: border-box;
@@ -154,5 +155,47 @@ ul {
 }
 
 .projects {
-  background-color: $primary-bg;
+  // background-color: $primary-bg;
+  .project {
+    // width: 90%;
+    margin: 30px auto;
+    background-color: $primary-bg;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px #ccc;
+    &-img {
+      width: 100%;
+      height: 30vh;
+    }
+    &-details {
+      text-align: center;
+      padding: 5px;
+      h3 {
+        font-size: 1.5em;
+        color: $primary-color;
+      }
+    }
+    &-tech {
+      margin: 8px;
+      p {
+        background-color: $secondary-color;
+        padding: 3px;
+        border-radius: 5px;
+        display: inline;
+        margin: 15px;
+      }
+    }
+    &-repo {
+      background-color: rgb(0, 140, 255);
+      color: #fff;
+      padding: 8px;
+      border-radius: 5px;
+      font-size: 1.1em;
+      .logo {
+        // padding-top: 2px;
+        font-size: 1.4em;
+      }
+    }
+  }
+  .project:hover {
+  }
 }
