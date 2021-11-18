@@ -83,7 +83,7 @@ ul {
 .sidebar {
   width: 100%;
   height: 0vh;
-  position: absolute;
+  position: fixed;
   top: 0vh;
   left: 0px;
   background-color: $primary-bg;
@@ -98,7 +98,7 @@ ul {
   }
   &-list {
     text-align: center;
-    margin-top: 50%;
+    margin-top: 35vh;
     &-item {
       margin: 40px;
       a {
@@ -134,17 +134,19 @@ ul {
 }
 
 .home {
-  &-img {
-    display: none;
-  }
-  &-text {
-    width: 50%;
-    margin: 0 auto;
-    text-align: center;
-    font-size: 1.8em;
-    span {
-      color: $secondary-color;
-      font-size: 1.5em;
+  &-main {
+    &-img {
+      display: none;
+    }
+    &-text {
+      width: 50%;
+      margin: 0 auto;
+      text-align: center;
+      font-size: 1.8em;
+      span {
+        color: $secondary-color;
+        font-size: 1.5em;
+      }
     }
   }
 }
@@ -291,17 +293,19 @@ ul {
   }
 
   .home {
-    margin-left: 15%;
-    display: flex;
-    justify-content: space-between;
-    &-img {
-      width: 40%;
-      display: block;
-    }
-    &-text {
-      width: 30%;
-      align-self: center;
-      font-size: 2.3em;
+    &-main {
+      margin-left: 15%;
+      display: flex;
+      justify-content: space-between;
+      &-img {
+        width: 40%;
+        display: block;
+      }
+      &-text {
+        width: 30%;
+        align-self: center;
+        font-size: 2.3em;
+      }
     }
   }
   .about {

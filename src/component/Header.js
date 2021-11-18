@@ -3,16 +3,17 @@ import { FaBars, FaTwitter, FaGithubSquare } from "react-icons/fa";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
 import { useGlobalContext } from "../context";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const { openSidebar } = useGlobalContext();
   return (
     <header className="header">
-      <a href="/" className="header-link">
+      <Link to="/" className="header-link">
         <h1 className="header-title">
           Toriola<span>John</span>
         </h1>
-      </a>
+      </Link>
       <Navbar />
       <FaBars onClick={openSidebar} className="header-bars" />
       <Sidebar />
