@@ -6,7 +6,7 @@ const Projects = () => {
   const { projects } = useGlobalContext();
 
   return (
-    <section className="section projects">
+    <section id="projects" className="section projects">
       <header className="section-header">
         <h1>Projects</h1>
         <div className="line"></div>

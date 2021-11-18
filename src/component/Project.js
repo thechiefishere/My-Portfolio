@@ -5,7 +5,7 @@ const Project = ({ project }) => {
   const { name, img, repository, technologies } = project;
 
   return (
-    <article className="project">
+    <article className="project scale">
       <img src={img} alt={name} className="project-img" />
       <div className="project-details">
         <h3>{name}</h3>
