@@ -1,4 +1,5 @@
 $primary-color: rgb(75, 7, 121);
+$primary-light: rgb(210, 163, 241);
 $primary-bg: hsl(280, 27%, 96%);
 $secondary-color: rgb(73, 177, 238);
 $secondary-bg: rgb(245, 248, 250);
@@ -23,6 +24,7 @@ a {
   text-decoration: none;
   color: #000;
 }
+
 ul {
   list-style: none;
 }
@@ -82,9 +84,17 @@ ul {
       display: inline-block;
       a {
         font-size: 1.1em;
+        padding: 2px;
+        border-radius: 5px;
       }
     }
   }
+}
+
+.navbar .active {
+  background-color: $primary-bg;
+  color: $primary-color;
+  box-shadow: 2px 2px 3px #888;
 }
 
 .sidebar {
