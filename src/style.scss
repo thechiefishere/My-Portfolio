@@ -3,6 +3,8 @@ $primary-bg: hsl(280, 27%, 96%);
 $secondary-color: rgb(73, 177, 238);
 $secondary-bg: rgb(245, 248, 250);
 $project-bg: rgb(0, 140, 255);
+$roboto-slab: "Roboto Slab", serif;
+$oswald: "Oswald", sans-serif;
 
 * {
   box-sizing: border-box;
@@ -13,7 +15,7 @@ $project-bg: rgb(0, 140, 255);
 body {
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
-  line-height: 1.5;
+  line-height: 1.7;
   overflow-x: hidden;
 }
 
@@ -29,6 +31,9 @@ ul {
   background-color: #fff;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top center;
+  font-family: $roboto-slab;
+  font-weight: 300;
 }
 
 .header {
@@ -42,6 +47,8 @@ ul {
 
   &-title {
     color: $primary-color;
+    font-family: $oswald;
+    font-weight: 500;
     span {
       color: $secondary-color;
     }
@@ -122,6 +129,8 @@ ul {
   &-header {
     margin-bottom: 40px;
     text-align: center;
+    font-family: $oswald;
+    font-weight: 300;
     font-size: 1.4em;
     color: $primary-color;
   }
@@ -169,8 +178,8 @@ ul {
     transition: 0.4s ease-out;
     &-img {
       width: 100%;
-      height: 30vh;
-      border-radius: 0px 0px 5px 5px;
+      height: 35vh;
+      border-radius: 10px 10px 0px 0px;
     }
     &-details {
       padding: 10px;
@@ -285,6 +294,7 @@ ul {
     }
     .navbar {
       display: flex;
+      font-size: 1.2em;
     }
   }
 
@@ -322,13 +332,14 @@ ul {
     .bio {
       &-aside {
         display: flex;
+        justify-content: center;
         &-img {
-          width: 40%;
-          height: 32vh;
+          width: 30%;
+          height: 37vh;
           border-radius: 10px 0px 0px 10px;
         }
         &-details {
-          width: 60%;
+          width: 70%;
           border-radius: 0px 10px 10px 0px;
         }
       }
@@ -343,6 +354,7 @@ ul {
     }
     .project {
       margin: 5px;
+      margin-bottom: 30px;
       flex-basis: 47%;
     }
   }
@@ -383,40 +395,16 @@ ul {
   }
 
   .about {
-    .info {
-      &-details {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-      }
-    }
     .aside {
       flex-basis: 31%;
     }
     .bio {
       width: 70%;
       margin: 20px auto;
-      &-aside {
-        display: flex;
-        &-img {
-          width: 40%;
-          height: 32vh;
-          border-radius: 10px 0px 0px 10px;
-        }
-        &-details {
-          width: 60%;
-          border-radius: 0px 10px 10px 0px;
-        }
-      }
     }
   }
 
   .projects {
-    &-list {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
     .project {
       margin: 5px;
       flex-basis: 31%;
