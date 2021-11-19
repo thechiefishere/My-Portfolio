@@ -91,10 +91,15 @@ ul {
   }
 }
 
-.navbar .active {
+.navbar .active,
+.sidebar .active {
   background-color: $primary-bg;
   color: $primary-color;
   box-shadow: 2px 2px 3px #888;
+}
+.sidebar .active {
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .sidebar {

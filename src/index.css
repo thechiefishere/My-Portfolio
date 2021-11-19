@@ -79,10 +79,16 @@ ul {
   border-radius: 5px;
 }
 
-.navbar .active {
+.navbar .active,
+.sidebar .active {
   background-color: #f6f2f8;
   color: #4b0779;
   box-shadow: 2px 2px 3px #888;
+}
+
+.sidebar .active {
+  padding: 8px;
+  border-radius: 5px;
 }
 
 .sidebar {
