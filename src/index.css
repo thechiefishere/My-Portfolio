@@ -20,6 +20,17 @@ ul {
   list-style: none;
 }
 
+.btn {
+  padding: 8px 15px;
+  border-radius: 5px;
+  background-color: #4b0779;
+  display: block;
+  margin: 20px auto;
+}
+.btn-link {
+  color: #fff;
+}
+
 .main {
   background-color: #fff;
   background-repeat: no-repeat;
@@ -159,6 +170,10 @@ ul {
   color: #49b1ee;
   font-size: 1.5em;
 }
+.home-projects {
+  width: 90%;
+  margin: 0 auto;
+}
 
 .about .info {
   margin-bottom: 25px;
@@ -188,46 +203,52 @@ ul {
   font-size: 1.4em;
 }
 
-.projects .project {
+.project {
+  width: 90vw;
   margin: 50px auto;
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 3px 3px 5px #777;
   padding-bottom: 8px;
+  margin-bottom: 20px;
   transition: 0.4s ease-out;
 }
-.projects .project-img {
+.project-img {
   width: 100%;
-  height: 25vh;
+  height: 50vw;
   border-radius: 8px 8px 0px 0px;
 }
-.projects .project-details {
+.project-details {
   text-align: center;
   padding: 5px;
   line-height: 1.8;
 }
-.projects .project-details h3 {
+.project-details h3 {
   font-size: 1.6em;
   color: #49b1ee;
 }
-.projects .project-tech {
-  margin: 5px;
-}
-.projects .project-tech p {
+.project-tech {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  text-align: center;
   color: #4b0779;
-  padding: 3px;
-  border-radius: 5px;
-  display: inline;
-  margin: 10px;
 }
-.projects .project-repo {
-  background-color: #008cff;
-  color: #fff;
-  padding: 8px;
+.project-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+.project-repo {
+  background-color: #f5f8fa;
+  color: #49b1ee;
+  padding: 2px 12px;
   border-radius: 5px;
   font-size: 1.1em;
+  margin-top: 10px;
 }
-.projects .project-repo .logo {
+.project-repo .logo {
   font-size: 1.4em;
 }
 
@@ -337,12 +358,15 @@ ul {
   .projects-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: normal;
   }
-  .projects .project {
-    margin: 5px;
-    margin-bottom: 30px;
-    flex-basis: 47%;
+
+  .project {
+    margin: 15px;
+    flex-basis: 45%;
+  }
+  .project-img {
+    height: 30vh;
   }
 
   .contact-groups {
@@ -381,7 +405,7 @@ ul {
   }
 
   .projects .project {
-    margin: 5px;
+    margin: 10px;
     flex-basis: 31%;
   }
 
