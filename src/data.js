@@ -31,6 +31,16 @@ const projects = [
   },
   {
     id: 4,
+    name: "Snake Game",
+    img: "/images/snake.png",
+    site: "https://simplesnake-game.netlify.app/home",
+    repository: "https://github.com/thechiefishere/Snake-Game",
+    type: "Game",
+    featured: true,
+    technologies: ["React", "Sass"],
+  },
+  {
+    id: 5,
     name: "CocktailDb",
     img: "/images/cocktail.png",
     site: "https://github.com/thechiefishere/Cocktails",
@@ -40,7 +50,7 @@ const projects = [
     technologies: ["React", "Sass"],
   },
   {
-    id: 5,
+    id: 6,
     name: "Cart",
     img: "/images/cart.png",
     site: "https://cartsandreducer.netlify.app/",
@@ -50,7 +60,7 @@ const projects = [
     technologies: ["React", "Sass"],
   },
   {
-    id: 6,
+    id: 7,
     name: "Grocery Bud",
     img: "/images/grocery-bud.png",
     site: "https://github.com/thechiefishere/Grocery-Bud",
