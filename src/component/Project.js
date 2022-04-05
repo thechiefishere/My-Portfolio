@@ -15,11 +15,11 @@ const Project = ({ project }) => {
           })}
         </div>
         <div className="project-links">
-          <a href={repository} className="project-repo">
+          <a href={repository} target="_blank" className="project-repo">
             <FaGithubSquare className="logo" />
             Code
           </a>
-          <a href={site} className="project-repo">
+          <a href={site} target="_blank" className="project-repo">
             View
           </a>
         </div>

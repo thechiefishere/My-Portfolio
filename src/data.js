@@ -1,6 +1,24 @@
 const projects = [
   {
     id: 1,
+    name: "Checkers Game",
+    img: "/images/checkers.png",
+    site: "https://checkersgame.netlify.app",
+    repository: "https://github.com/thechiefishere/Checkers",
+    type: "Game",
+    featured: true,
+    technologies: [
+      "Socket.io",
+      "NodeJS",
+      "Express",
+      "Mongo",
+      "Redux",
+      "React",
+      "Sass",
+    ],
+  },
+  {
+    id: 2,
     name: "Tokunbo Cars",
     img: "/images/tokunbo.png",
     site: "https://tokunbocars.netlify.app",
@@ -10,7 +28,7 @@ const projects = [
     technologies: ["NodeJS", "Express", "Mongo", "React", "Sass"],
   },
   {
-    id: 2,
+    id: 3,
     name: "Bata",
     img: "/images/bata.png",
     site: "https://buy-bata.netlify.app",
@@ -20,7 +38,7 @@ const projects = [
     technologies: ["NodeJS", "Express", "Mongo", "React", "Redux", "Sass"],
   },
   {
-    id: 3,
+    id: 4,
     name: "BFS vs DFS",
     img: "/images/bfsvsdfs.png",
     site: "https://bfsvsdfs.netlify.app/home",
@@ -30,7 +48,7 @@ const projects = [
     technologies: ["React", "Sass"],
   },
   {
-    id: 4,
+    id: 5,
     name: "Affordable Services",
     img: "/images/affordable.png",
     site: "https://affordableservices.netlify.app/home",
@@ -40,7 +58,7 @@ const projects = [
     technologies: ["React", "Sass"],
   },
   {
-    id: 5,
+    id: 6,
     name: "Snake Game",
     img: "/images/snake.png",
     site: "https://simplesnake-game.netlify.app/home",
@@ -50,7 +68,7 @@ const projects = [
     technologies: ["React", "Sass"],
   },
   {
-    id: 6,
+    id: 7,
     name: "CocktailDb",
     img: "/images/cocktail.png",
     site: "https://github.com/thechiefishere/Cocktails",
@@ -60,7 +78,7 @@ const projects = [
     technologies: ["React", "Sass"],
   },
   {
-    id: 7,
+    id: 8,
     name: "Cart",
     img: "/images/cart.png",
     site: "https://cartsandreducer.netlify.app/",
@@ -70,7 +88,7 @@ const projects = [
     technologies: ["React", "Sass"],
   },
   {
-    id: 8,
+    id: 9,
     name: "Grocery Bud",
     img: "/images/grocery-bud.png",
     site: "https://github.com/thechiefishere/Grocery-Bud",
